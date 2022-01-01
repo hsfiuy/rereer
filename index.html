@@ -1,0 +1,61 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>send this to your friends to prank</title>
+</head>
+<body><center>hi
+i am 
+<marquee class="your-mom">your mom</marquee>
+so behave
+and do your chores
+<marquee class="your-mom">now <label>u susy cat<h4> yes <b>no</b></h4></label></marquee>
+
+<style>
+    #container {
+        margin: 0px auto;
+        width: 500px;
+        height: 375px;
+        border: 10px #333 solid;
+    }
+    #videoElement {
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+    }
+    </style>
+    </head>
+     
+    <body>
+    <div id="container">
+        <video autoplay="true" id="videoElement">
+        
+        </video>
+    </div>
+    <script>
+    var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+    </script>
+    <br>
+    <button onclick="error()">EROR MESAGE CONSOLE?</button>
+    <h1 id="output"></h1>
+    <script>
+        function error(){
+            document.getElementById("output").innerHTML="Now reopen your browser lol";
+            while(true){
+                
+                setTimeout(function(){
+                    console.error("Never gonna give you up never gonna let you down");
+                },0);
+            }
+        }
+    </script>
+</center>
+</body>
